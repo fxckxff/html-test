@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="">
+        <a href="/">
           <!-- logo-->
           <img src="./images/logo.svg" alt="logo beauty zone" />
         </a>
         <ul>
-          <li><a href="#about-us">Про нас</a></li>
-          <li><a href="#why-people-choose-us">Чому ми</a></li>
-          <li><a href="#ours-procedurs">Наші процедури</a></li>
-          <li><a href="#address">Контакти</a></li>
+          <li><a class="link" href="#about-us">Про нас</a></li>
+          <li><a class="link" href="#why-people-choose-us">Чому ми</a></li>
+          <li><a class="link" href="#ours-procedurs">Наші процедури</a></li>
+          <li><a class="link" href="#address">Контакти</a></li>
         </ul>
         <ul>
           <li><a href="">phone</a></li>
@@ -27,14 +29,16 @@
       <!-- замовuтu дзвінок-->
     </header>
     <main>
-      <section>
+      <section class="main-section">
         <p>Косметологічна клініка</p>
-        <h1>Beauty Zone</h1>
-        <button type="button">Замовити дзвінок</button>
+        <h1 class="hero-title">Beauty Zone</h1>
+        <button class="button-order" type="button">Замовити дзвінок</button>
         <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
       </section>
       <section id="about-us">
-        <h2>Перевтілюйтесь в Beauty Zone</h2>
+        <h2 class="section-title">
+          Перевтілюйтесь в <span class="section-accent">Beauty Zone</span>
+        </h2>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
@@ -46,7 +50,9 @@
         </p>
       </section>
       <section id="why-people-choose-us">
-        <h2>Чому люди обирають нас</h2>
+        <h2 class="section-title">
+          Чому люди <span class="section-accent">обирають нас</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -75,7 +81,9 @@
         </ul>
       </section>
       <section id="ours-procedurs">
-        <h2>Наші процедури</h2>
+        <h2 class="section-title">
+          Наші <span class="section-accent">процедури</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -95,7 +103,9 @@
         </ul>
       </section>
       <section>
-        <h2>Як нас знайти</h2>
+        <h2 class="section-title">
+          Як нас <span class="section-accent">знайти</span>
+        </h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.476474136308!2d30.775235599999995!3d50.506700699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMDc0MDA!5e0!3m2!1sru!2sde!4v1701210765734!5m2!1sru!2sde"
           width="605"
@@ -112,7 +122,7 @@
     </main>
     <footer>
       <nav>
-        <a href="">
+        <a href="/">
           <!-- logo-->
           <img src="./images/logo.svg" alt="logo beauty zone" />
         </a>
