@@ -6,10 +6,21 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 ul {
   list-style-type: none;
+}
+h2 {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
 }
 
 /* button section */
@@ -19,6 +30,8 @@ ul {
   border: 2px solid var(--color-primary-light);
   border-radius: 32px;
   cursor: pointer;
+  font-family: Roboto;
+  font-weight: 600;
 }
 .button-order:hover {
   color: var(--color-primary-dark);
@@ -28,20 +41,72 @@ ul {
 /* link section */
 .link {
   color: var(--color-primary-dark);
+  text-decoration: none;
+  font-weight: 400;
 }
 .link:hover {
   color: var(--color-primary-light);
+  font-weight: 700;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--color-primary-light);
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 81.429%;
 }
-
+/* Under button section*/
+.under-button {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
 /* title section */
 .section-title {
   color: var(--color-primary-dark);
+  line-height: 1.156;
 }
 .section-title .section-accent {
   color: var(--color-primary-light);
+  line-height: 1.156;
+}
+.section-title {
+  text-align: center;
+}
+/* About us title*/
+.about-us-title {
+  color: var(--color-primary-dark);
+  line-height: 1.156;
+}
+.about-us-title .section-accent {
+  color: var(--color-primary-light);
+  line-height: 1.156;
+}
+
+/* About us p*/
+.about-us-p span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* About us */
+.about-us {
+  font-size: 22px;
+  line-height: 1.72;
+}
+
+/* Footer */
+
+/* Footer link section*/
+.foot-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.address-copyright {
+  font-size: 13px;
+  line-height: 1.17;
 }
