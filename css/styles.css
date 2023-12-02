@@ -64,6 +64,8 @@ body {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 h2 {
@@ -98,15 +100,44 @@ p {
   font-weight: 700;
 }
 
+/* Header secction */
+.header-container {
+  display: flex;
+  padding-top: 32px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+}
+
+.header-sm {
+  display: flex;
+  gap: 32px;
+}
+
 /* Hero section */
 
 .hero-section {
-  padding: 123.12px auto 269.81px auto;
+  padding-top: 85.5px;
+  padding-bottom: 166px;
+  padding-left: 244px;
 }
-
+.under-title {
+  margin-bottom: 16px;
+}
 /*Hero title*/
 .hero-title {
-  margin-bottom: 0;
+  width: 529px;
+  margin-bottom: 42px;
   color: var(--color-primary-light);
   font-family: Play, sans-serif;
   font-weight: 700;
@@ -116,6 +147,8 @@ p {
 
 /* button section */
 .button-order {
+  margin-bottom: 16px;
+  padding: 16px 32px;
   color: white;
   background-color: var(--color-primary-light);
   border: 2px solid var(--color-primary-light);
@@ -123,6 +156,7 @@ p {
   cursor: pointer;
   font-family: Roboto;
   font-weight: 600;
+  font-size: 18px;
 }
 .button-order:hover {
   color: var(--color-primary-dark);
@@ -130,6 +164,7 @@ p {
 }
 /* Under button section*/
 .under-button {
+  width: 238px;
   text-align: center;
   font-size: 12px;
   line-height: 1.5;
