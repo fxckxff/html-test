@@ -1,6 +1,6 @@
 const modal = document.querySelector(".modal");
 const modalBtnOpen = document.querySelector(".modal-btn-open");
-const modalBtnClose = docuent.querySelector(".modal-btn-close");
+const modalBtnClose = document.querySelector(".modal-btn-close");
 
 const toggleModal = () => modal.classList.toggle("is-hidden");
 
