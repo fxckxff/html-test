@@ -157,7 +157,7 @@ a {
   padding-left: 244px;
   background-image: url(../images/hero-section-background.jpg);
   background-repeat: no-repeat;
-  background-position: 350px 1px;
+  background-position: center;
   /*background-image: linear-gradient(
     89deg,
     #fff 30.62%,
@@ -442,8 +442,11 @@ a {
   background-color: var(--color-primary-dark);
 }
 
-.modal.is-hidden {
-  display: none;
+.backdrop.is-hidden {
+  /*display: none;*/
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-btn-close {
