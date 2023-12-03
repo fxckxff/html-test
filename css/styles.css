@@ -43,6 +43,7 @@
 :root {
   --color-primary-light: #2b7fff;
   --color-primary-dark: #011c44;
+  --color-light: #ffffff;
 }
 
 /* Base */
@@ -52,7 +53,9 @@
   margin: 0 auto;
   padding: 0 16px;
 }
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -68,6 +71,21 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+
+/* title section */
+.section-title {
+  color: var(--color-primary-dark);
+  line-height: 1.156;
+}
+.section-title .section-accent {
+  color: var(--color-primary-light);
+  line-height: 1.156;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
 h2 {
   font-family: Play, sans-serif;
   font-weight: 700;
@@ -84,6 +102,9 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+a {
+  display: inline-block;
 }
 
 .section {
@@ -124,12 +145,26 @@ p {
   gap: 32px;
 }
 
+.header-sm-item {
+  fill: var(--color-primary-dark);
+}
+
 /* Hero section */
 
 .hero-section {
   padding-top: 85.5px;
   padding-bottom: 166px;
   padding-left: 244px;
+  background-image: url(../images/image\ 1576.png);
+  /*background-repeat: no-repeat;*/
+  /*background-position: 350px 1px;*/
+  background-image: linear-gradient(
+    89deg,
+    #fff 30.62%,
+    rgba(255, 255, 255, 0.85) 41.31%,
+    rgba(255, 255, 255, 0.19) 58.65%,
+    rgba(255, 255, 255, 0) 72.78%
+  );
 }
 .under-title {
   margin-bottom: 16px;
@@ -169,19 +204,6 @@ p {
   font-size: 12px;
   line-height: 1.5;
 }
-/* title section */
-.section-title {
-  color: var(--color-primary-dark);
-  line-height: 1.156;
-}
-.section-title .section-accent {
-  color: var(--color-primary-light);
-  line-height: 1.156;
-}
-.section-title {
-  text-align: center;
-  margin-bottom: 48px;
-}
 
 /* About us section */
 
@@ -201,6 +223,10 @@ p {
 }
 
 /* About us p*/
+.about-us-p:first-child {
+  margin-bottom: 40px;
+}
+
 .about-us-p span {
   font-weight: 600;
   text-transform: capitalize;
@@ -210,23 +236,167 @@ p {
   font-size: 22px;
   line-height: 1.72;
 }
+
+.about-us-container {
+  display: flex;
+  gap: 28px;
+}
+
+.about-us-img {
+  width: 531px;
+}
+
+.about-us-img:last-child {
+  width: 531px;
+  align-self: flex-end;
+  text-align: end;
+}
 /* Why people choose us section */
 
 .why-people-choose-us-title {
+  margin-bottom: 48px;
+}
+
+.ours-advantages-list {
+  display: flex;
+  gap: 56px;
+}
+
+.ours-advatages-item {
+  flex-basis: calc(100% / 3);
+  justify-content: center;
+}
+
+.advantages-card {
+  width: 316px;
+  padding: 24px 32px;
+  text-align: center;
+  border: 1px solid lightgray; /* Remove */
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.advantages-icon {
+  fill: var(--color-primary-light);
 }
 
 /* Ours procedurs section*/
 
-.ours-procedurs-title {
+.procedours-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.ours-procedours-list {
+  display: flex;
+  gap: 16px;
+}
+
+.procedours-item {
+  flex-basis: calc((100%-32px) / 3);
+}
+
+.procedours-card {
+  width: 344px;
+  height: 456px;
+  flex-shrink: 0;
+  border-radius: 120px 4px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
+  border: 1px solid var(--color-primary-dark);
+  text-align: center;
+}
+
+/* Carousel buttons*/
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  fill: var(--color-primary-dark);
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-light);
+  fill: #ffffff;
+}
+
+/* Contact section*/
+
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 32px;
 }
 
 /* Footer */
 
+.footer {
+  background-color: var(--color-primary-dark);
+  padding: 56px, 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 24px;
+  padding: 56px, 0;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 24px;
+  padding: 56px, 0;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.adress-copyrighgt {
+  flex-grow: 1;
+}
+
 /* Footer link section*/
 .foot-link {
+  padding-bottom: 16px;
   text-decoration: none;
   font-size: 16px;
   line-height: 1.17;
+  color: #ffffff;
+}
+.sm-footlist-container {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-icon {
+  fill: #ffffff;
 }
 
 .address-copyright {
