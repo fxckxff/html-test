@@ -6,7 +6,7 @@
     <title>Beauty Zone</title>
 
     <!-- Style-->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
@@ -104,14 +104,14 @@
         class="why-people-choose-us-section section"
         id="why-people-choose-us"
       >
-        <div class="container">
+        <div class="container why-people-choose-us-container">
           <h2 class="why-people-choose-us-title section-title">
             Чому люди <span class="section-accent">обирають нас</span>
           </h2>
           <ul class="ours-advantages-list">
             <li class="ours-advatages-item">
               <article class="advantages-card">
-                <svg class="advantages-icon" width="48" hight="48">
+                <svg class="advantages-icon" width="48" height="48">
                   <use href="./images/icons.svg#atom-icon"></use>
                 </svg>
                 <p>
@@ -122,7 +122,7 @@
             </li>
             <li class="ours-advatages-item">
               <article class="advantages-card">
-                <svg class="advantages-icon" width="48" hight="48">
+                <svg class="advantages-icon" width="48" height="48">
                   <use href="./images/icons.svg#cosmetic-icon"></use>
                 </svg>
                 <p>
@@ -133,7 +133,7 @@
             </li>
             <li class="ours-advatages-item">
               <article class="advantages-card">
-                <svg class="advantages-icon" width="48" hight="48">
+                <svg class="advantages-icon" width="48" height="48">
                   <use href="./images/icons.svg#crown-icon"></use>
                 </svg>
                 <p>
@@ -198,10 +198,49 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <div class="contact-form">
-              <h3>Запишіться безкоштовно та отримайте подарунок</h3>
-              <button type="button">Записатись безкоштовно</button>
-              <p>
-                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+              <h3 class="modal-under-title">
+                Запишіться <span class="modal-text-accent">безкоштовно</span> та
+                отримайте подарунок
+              </h3>
+              <div class="form-field">
+                <label class="form-label" for="user-name"></label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Ваше ім'я та прізвище"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="user-tel"></label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  placeholder="Ваш номер телефону"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="user-email"></label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Ваша електронна пошта"
+                />
+              </div>
+
+              <button class="form-button button-order" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="form-terms">
+                Натискаючи на кнопку я погоджуюсь
+                <a class="form-terms-link" href="#"
+                  >з політикою конфіденційності</a
+                >
               </p>
             </div>
           </div>
@@ -291,15 +330,15 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2 class="section-title modal-title">Замовити дзвінок</h2>
-        <p class="modal-under-title">
+        <h3 class="modal-under-title">
           Запишіться <span class="modal-text-accent">безкоштовно</span> та
           отримайте подарунок
-        </p>
-        <form name="contact-form" autocomplete="off" novalidate>
+        </h3>
+        <form name="contact-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >name</label
@@ -310,6 +349,7 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              required
             />
           </div>
 
@@ -323,6 +363,7 @@
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
+              required
             />
           </div>
 
@@ -336,6 +377,7 @@
               name="user-email"
               id="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
 
@@ -345,7 +387,7 @@
         </form>
         <p class="form-terms">
           Натискаючи на кнопку я погоджуюсь
-          <a href="#">з політикою конфіденційності</a>
+          <a class="form-terms-link" href="#">з політикою конфіденційності</a>
         </p>
       </div>
     </div>

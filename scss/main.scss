@@ -364,7 +364,7 @@ a {
 }
 
 .procedours-item {
-  flex-basis: calc((100%-32px) / 3);
+  flex-basis: calc((100% - 32px) / 3);
 }
 
 .procedours-card {
@@ -599,4 +599,10 @@ a {
   font-size: 12px;
   line-height: 1.5;
   color: var(--color-secondary-dark);
+}
+.form-terms-link {
+  color: var(--color-secondary-dark);
+}
+.form-terms-link:hover {
+  color: var(--color-primary-light);
 }
