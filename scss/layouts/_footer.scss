@@ -1,0 +1,34 @@
+.footer {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 24px;
+  padding: 56px, 0;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 24px;
+  padding: 56px, 0;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.adress-copyrighgt {
+  flex-grow: 1;
+  color: var(--color-light);
+}

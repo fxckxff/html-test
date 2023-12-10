@@ -1,0 +1,81 @@
+.about-us-section {
+  padding-top: 0;
+  padding-bottom: 88px;
+}
+/* About us title*/
+.about-us-title {
+  text-align: left;
+  color: var(--color-primary-dark);
+  line-height: 1.156;
+  margin-bottom: 40px;
+}
+.about-us-title .section-accent {
+  color: var(--color-primary-light);
+  line-height: 1.156;
+}
+
+/* About us p*/
+.about-us-p:first-child {
+  margin-bottom: 40px;
+}
+
+.about-us-p span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.about-us-p {
+  font-size: 22px;
+  line-height: 1.72;
+}
+
+.about-us-container {
+  display: flex;
+  gap: 28px;
+}
+
+.about-us-container-text {
+  max-width: 709px;
+}
+
+.about-us-img {
+  position: relative;
+}
+
+.about-us-pict-1 {
+  position: relative;
+  margin-left: 0;
+}
+.about-us-img::before {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background-image: url("../images/Star-2.png");
+  background-repeat: no-repeat;
+  content: "";
+}
+.about-us-img::after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 335px;
+  left: 350px;
+  background-image: url("../images/Star-1.png");
+  background-repeat: no-repeat;
+  content: " ";
+}
+
+.about-us-pict-2 {
+  margin-left: 168px;
+}
+.about-us-pict-2::after {
+  width: 64px;
+  height: 64px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../images/Star-3.png");
+  content: "";
+}
