@@ -1,13 +1,28 @@
 .contact-section {
   padding-bottom: 96px;
-}
 
-.contact-container {
-  display: flex;
-  gap: 32px;
-}
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
 
-.contact-map {
-  flex-shrink: 0;
-  border-radius: 32px;
+  &__map {
+    flex-shrink: 0;
+    border-radius: 32px;
+  }
+
+  &__form {
+    padding: 48px 56px;
+    background-color: var(--color-primary-dark);
+    background-image: url(../../images/vector-background.png);
+    border-radius: 32px;
+    max-width: 423px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  &__field {
+    margin-bottom: 16px;
+  }
 }

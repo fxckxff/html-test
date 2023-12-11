@@ -4,17 +4,22 @@
 @import "./utils/variables";
 @import "./utils/utils";
 @import "./utils/mixins";
+@import "./utils/texts";
 
+@import "./components/inputs";
 @import "./components/links";
 @import "./components/buttons";
 @import "./components/carousel-buttons";
-@import "./components/procedours-card";
+@import "./components/advantages-cards";
+@import "./components/procedurs-card";
 
+@import "./layouts/section";
+@import "./layouts/container";
 @import "./layouts/header";
 @import "./layouts/hero-section";
 @import "./layouts/about-us-section";
-@import "./layouts/why-people-choose-us-section";
-@import "./layouts/procedours-section";
+@import "./layouts/why-we-section";
+@import "./layouts/procedurs-section";
 @import "./layouts/contact-section";
 @import "./layouts/footer";
 @import "./layouts/modal";

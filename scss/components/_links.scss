@@ -3,40 +3,9 @@
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s;
-}
-.link:hover {
-  color: var(--color-primary-light);
-  /*font-weight: 700;*/
-}
 
-/* Footer Links */
-.foot-link {
-  padding-bottom: 16px;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 1.17;
-  color: var(--color-light);
-}
-.sm-footlist-container {
-  display: flex;
-  gap: 24px;
-}
-
-.footer-icon {
-  fill: var(--color-light);
-}
-
-.address-copyright {
-  font-size: 13px;
-  line-height: 1.17;
-}
-
-.footer::after {
-  position: absolute;
-  width: 247px;
-  height: 152px;
-  right: 0;
-  bottom: 0;
-  background-image: url("../images/decor-cosmetic.png");
-  content: "";
+  &:hover {
+    color: var(--color-primary-light);
+    /*font-weight: 700;*/
+  }
 }

@@ -1,45 +1,10 @@
-/* Body Form */
-.contact-form {
-  padding: 48px 56px;
-  background-color: var(--color-primary-dark);
-  background-image: url(../images/footer-background.png);
-  border-radius: 32px;
-
-  .form-field {
-    margin-bottom: 16px;
-  }
-}
-
-/* Modal Form */
-.form-field {
-  position: relative;
-  max-width: 310px;
-  margin: 0 auto 24px;
-}
-
-.form-label {
-  position: absolute;
-  left: 32px;
-  top: 18px;
-  font-size: 13px;
-  line-height: 1.15;
-}
-
-.form-input {
-  width: 100%;
-
-  padding: 18px 32px;
-  border-radius: 32px;
-  border: 2px solid var(--color-secondary-dark);
-  background-color: transparent;
-}
-.form-input::placeholder {
+.form__title {
+  max-width: 280px;
+  margin: 0 auto 32px;
+  font-size: 22px;
+  line-height: 1.18;
+  font-weight: 600;
   color: var(--color-light);
-}
-
-.form-input:focus {
-  background-color: var(--color-secondary-dark);
-  outline: none;
 }
 
 .form-button {
@@ -56,10 +21,12 @@
   font-size: 12px;
   line-height: 1.5;
   color: var(--color-secondary-dark);
-}
-.form-terms-link {
-  color: var(--color-secondary-dark);
-}
-.form-terms-link:hover {
-  color: var(--color-primary-light);
+
+  &__link {
+    color: var(--color-secondary-dark);
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
 }

@@ -1,0 +1,14 @@
+.section {
+  padding: 48px 0;
+
+  &__title {
+    color: var(--color-primary-dark);
+    line-height: 1.156;
+    font-size: 64px;
+
+    margin-bottom: 48px;
+    &--centerd {
+      text-align: center;
+    }
+  }
+}
