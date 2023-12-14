@@ -7,9 +7,10 @@
       rgba(255, 255, 255, 0) 72.45%
     ),
     url(../images/hero-section-background.jpg);
+  background-size: 130%;
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: cover;
+
   @media screen and (min-width: $bp-desktop) {
     /*max-width: 1440px;*/
 
@@ -30,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding-top: 70px;
+    padding: 70px 0 56px;
 
     @media screen and (min-width: $bp-desktop) {
       /*max-width: 1440px;*/

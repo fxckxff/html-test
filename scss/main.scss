@@ -1,28 +1,28 @@
-@import "./base";
-
-@import "./utils/fonts";
 @import "./utils/variables";
-@import "./utils/utils";
+@import "./utils/fonts";
 @import "./utils/mixins";
 @import "./utils/texts";
+@import "./utils/utils";
 
-@import "./components/inputs";
-@import "./components/links";
+@import "./base";
+
+@import "./components/advantages-cards";
+@import "./components/button-cross";
 @import "./components/buttons";
 @import "./components/carousel-buttons";
-@import "./components/advantages-cards";
+@import "./components/inputs";
+@import "./components/links";
 @import "./components/procedurs-card";
-@import "./components/button-cross";
 
-@import "./layouts/section";
+@import "./layouts/about-us-section";
+@import "./layouts/contact-section";
 @import "./layouts/container";
+@import "./layouts/footer";
+@import "./layouts/forms";
 @import "./layouts/header";
 @import "./layouts/hero-section";
-@import "./layouts/about-us-section";
-@import "./layouts/why-we-section";
-@import "./layouts/procedurs-section";
-@import "./layouts/contact-section";
-@import "./layouts/footer";
-@import "./layouts/modal";
-@import "./layouts/forms";
 @import "./layouts/mobile-menu";
+@import "./layouts/modal";
+@import "./layouts/procedurs-section";
+@import "./layouts/section";
+@import "./layouts/why-we-section";
