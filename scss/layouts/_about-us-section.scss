@@ -25,6 +25,7 @@
   }
   &__text-box {
     position: relative;
+
     &::after {
       position: absolute;
       width: 60px;
@@ -34,6 +35,18 @@
       background-image: url("../images/Star-1.png");
       background-repeat: no-repeat;
       content: "";
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      &::after {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 200px;
+        right: 20px;
+        background-image: url("../images/Star-1.png");
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -48,7 +61,11 @@
 
     &:first-child {
       position: relative;
-      margin-bottom: 40px;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: $bp-desktop) {
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -56,6 +73,7 @@
     display: none;
 
     @media screen and (min-width: $bp-desktop) {
+      display: block;
       position: relative;
 
       &::before {
