@@ -47,19 +47,23 @@
                 </a>
               </li>
             </ul>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
           </nav>
-          <button class="header__burger" type="button">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
+
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn_close menu-btn-close">Close</button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-section__container">
-          <div class="container">
+        <div class="container">
+          <div class="hero-section__container">
             <p class="hero-section__over-title">Косметологічна клініка</p>
             <h1 class="hero-section__title">Beauty Zone</h1>
             <button class="button-order modal-btn-open" type="button">
@@ -71,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us-section section" id="about-us">
+      <!--<section class="about-us-section section" id="about-us">
         <div class="container">
           <div class="about-us-section__container">
             <div class="about-us-section__text-side">
@@ -90,22 +94,11 @@
               </p>
             </div>
             <div class="about-us-section__img">
-              <!--<div class="about -us-img-1"> -->
               <img
                 class="about-us-section__pict-1"
                 src="./images/face-before.png"
                 alt="face-before"
               />
-              <!--<svg class="star">
-                  <use href="./images/icons.svg#phone-icon"></use>
-                </svg>
-                <svg class="star">
-                  <use href="./images/icons.svg#phone-icon"></use>
-                </svg>
-                <svg class="star" width="42" height="42">
-                  <use href="./images/icons.svg#phone-icon"></use>
-                </svg>
-              </div> -->
               <img
                 class="about-us-section__pict-2"
                 src="./images/face-after.png"
@@ -114,8 +107,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="why-we-section section" id="why-people-choose-us">
+      </section> -->
+      <!--<section class="why-we-section section" id="why-people-choose-us">
         <div class="why-we-section__container container">
           <h2
             class="why-we-section__title section__title section__title--centerd"
@@ -158,8 +151,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="procedurs-section section" id="ours-procedurs">
+      </section> -->
+      <!--<section class="procedurs-section section" id="ours-procedurs">
         <div class="container">
           <h2
             class="procedurs-section__title section__title section__title--centerd"
@@ -211,8 +204,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contact-section section">
+      </section> -->
+      <!-- <section class="contact-section section">
         <div class="container">
           <h2 class="section__title section__title--centerd">
             Як нас <span class="text-brand">знайти</span>
@@ -276,15 +269,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
             <div class="footer__logo">
               <a href="/">
-                <!-- logo-->
+                
                 <img src="./images/logo.svg" alt="logo beauty zone" />
               </a>
             </div>
@@ -364,12 +357,17 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+        <button
+          class="modal__btn-close button-cross modal-btn-close"
+          type="button"
+        >
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
         </button>
         <h2 class="modal__title section-title">Замовити дзвінок</h2>
         <h3 class="form__title">
@@ -431,4 +429,5 @@
     </div>
   </body>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </html>
