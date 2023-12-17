@@ -6,6 +6,10 @@
     <title>Beauty Zone</title>
     <!-- Style-->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -157,51 +161,83 @@
           </ul>
         </div>
       </section>
-      <!--<section class="procedurs-section section" id="ours-procedurs">
+      <section class="procedurs-section section" id="ours-procedurs">
         <div class="container">
           <h2
             class="procedurs-section__title section__title section__title--centerd"
           >
             Наші <span class="text-brand">процедури</span>
           </h2>
-          <div class="procedurs-section__container">
-            <button class="carousel-button">
+          <div class="procedurs-section__slider">
+            <button class="carousel-button prev">
               <svg class="carousel-arrow" width="16" hight="16">
                 <use href="./images/icons.svg#icon-Arrow2"></use>
               </svg>
             </button>
-            <ul class="procedurs-section__list">
-              <li class="procedurs-section__item">
-                <article class="procedurs-card">
-                  <img
-                    class="procedurs-card__image"
-                    src="./images/Mask group-2.jpg"
-                    alt="Walrus format"
-                  />
-                  <p class="procedurs-card__name">Маски для обличчя</p>
-                </article>
-              </li>
-              <li class="procedurs-section__item">
-                <article class="procedurs-card">
-                  <img
-                    class="procedurs-card__image"
-                    src="./images/Mask group.jpg"
-                    alt="Walrus format"
-                  />
-                  <p class="procedurs-card__name">Ін'єкції для обличчя</p>
-                </article>
-              </li>
-              <li class="procedurs-section__item">
-                <article class="procedurs-card">
-                  <img
-                    class="procedurs-card__image"
-                    src="./images/Mask group-3.jpg"
-                    alt="Walrus format"
-                  />
-                  <p class="procedurs-card__name">Очищення обличчя</p>
-                </article>
-              </li>
-            </ul>
+            <div class="procedurs-section__container swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="procedurs-card">
+                    <img
+                      class="procedurs-card__image"
+                      src="./images/Mask group-2.jpg"
+                      alt="Walrus format"
+                    />
+                    <p class="procedurs-card__name">Маски для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedurs-card">
+                    <img
+                      class="procedurs-card__image"
+                      src="./images/Mask group.jpg"
+                      alt="Walrus format"
+                    />
+                    <p class="procedurs-card__name">Ін'єкції для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedurs-card">
+                    <img
+                      class="procedurs-card__image"
+                      src="./images/Mask group-3.jpg"
+                      alt="Walrus format"
+                    />
+                    <p class="procedurs-card__name">Очищення обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedurs-card">
+                    <img
+                      class="procedurs-card__image"
+                      src="./images/Mask group-2.jpg"
+                      alt="Walrus format"
+                    />
+                    <p class="procedurs-card__name">Маски для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedurs-card">
+                    <img
+                      class="procedurs-card__image"
+                      src="./images/Mask group.jpg"
+                      alt="Walrus format"
+                    />
+                    <p class="procedurs-card__name">Ін'єкції для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedurs-card">
+                    <img
+                      class="procedurs-card__image"
+                      src="./images/Mask group-3.jpg"
+                      alt="Walrus format"
+                    />
+                    <p class="procedurs-card__name">Очищення обличчя</p>
+                  </article>
+                </li>
+              </ul>
+            </div>
             <button class="carousel-button next">
               <svg class="carousel-arrow" width="16" hight="16">
                 <use href="./images/icons.svg#icon-Arrow2"></use>
@@ -209,7 +245,7 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="contact-section section">
         <div class="container">
           <h2 class="section__title section__title--centerd">
@@ -433,6 +469,10 @@
       </div>
     </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./js/procedurs-slider.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
 </html>
