@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px;
   background-color: rgba(1, 31, 74, 0.4);
   transition: opacity 0.3s, visibility 0.3s;
   overflow-y: auto;
@@ -21,7 +21,7 @@
 
 .modal {
   position: relative;
-  padding: 42px 144px;
+  padding: 42px 64px;
   width: 100%;
   max-width: 720px;
   height: 100%;
@@ -29,6 +29,11 @@
   border-radius: 48px;
   background-color: var(--color-primary-dark);
   background-image: url(../../images/vector-background.png);
+  overflow: scroll;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
 
   &__btn-close {
     position: absolute;

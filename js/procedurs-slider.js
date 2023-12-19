@@ -3,17 +3,19 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 16,
   breakpoints: {
-    480: {
+    768: {
       slidesPerView: 2,
     },
 
-    768: {
+    1280: {
       slidesPerView: 3,
     },
   },
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".pagination",
+    bulletClass: "pagination__button",
+    bulletActiveClass: "pagination__button--active",
   },
   navigation: {
     nextEl: ".carousel-button.next",

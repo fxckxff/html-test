@@ -169,13 +169,13 @@
             Наші <span class="text-brand">процедури</span>
           </h2>
           <div class="procedurs-section__slider">
-            <button class="carousel-button prev">
+            <button class="procedurs-section__button carousel-button prev">
               <svg class="carousel-arrow" width="16" hight="16">
                 <use href="./images/icons.svg#icon-Arrow2"></use>
               </svg>
             </button>
             <div class="procedurs-section__container swiper">
-              <ul class="swiper-wrapper">
+              <ul class="procedurs-section__list swiper-wrapper">
                 <li class="swiper-slide">
                   <article class="procedurs-card">
                     <img
@@ -210,35 +210,37 @@
                   <article class="procedurs-card">
                     <img
                       class="procedurs-card__image"
-                      src="./images/Mask group-2.jpg"
-                      alt="Walrus format"
-                    />
-                    <p class="procedurs-card__name">Маски для обличчя</p>
-                  </article>
-                </li>
-                <li class="swiper-slide">
-                  <article class="procedurs-card">
-                    <img
-                      class="procedurs-card__image"
                       src="./images/Mask group.jpg"
                       alt="Walrus format"
                     />
                     <p class="procedurs-card__name">Ін'єкції для обличчя</p>
-                  </article>
-                </li>
-                <li class="swiper-slide">
-                  <article class="procedurs-card">
-                    <img
-                      class="procedurs-card__image"
-                      src="./images/Mask group-3.jpg"
-                      alt="Walrus format"
-                    />
-                    <p class="procedurs-card__name">Очищення обличчя</p>
                   </article>
                 </li>
               </ul>
+              <div class="pagination">
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 1"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 2"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 3"
+                ></button>
+                <button
+                  class="pagination__button"
+                  type="button"
+                  aria-label="Go to slide 4"
+                ></button>
+              </div>
             </div>
-            <button class="carousel-button next">
+            <button class="procedurs-section__button carousel-button next">
               <svg class="carousel-arrow" width="16" hight="16">
                 <use href="./images/icons.svg#icon-Arrow2"></use>
               </svg>
@@ -246,22 +248,24 @@
           </div>
         </div>
       </section>
-      <!-- <section class="contact-section section">
+      <section class="contact-section section">
         <div class="container">
           <h2 class="section__title section__title--centerd">
             Як нас <span class="text-brand">знайти</span>
           </h2>
           <div class="contact-section__container">
-            <iframe
-              class="contact-section__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.476474136308!2d30.775235599999995!3d50.506700699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMDc0MDA!5e0!3m2!1sru!2sde!4v1701210765734!5m2!1sru!2sde"
-              width="605"
-              height="481"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <div class="contact-section__map-container">
+              <iframe
+                class="contact-section__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.476474136308!2d30.775235599999995!3d50.506700699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMDc0MDA!5e0!3m2!1sru!2sde!4v1701210765734!5m2!1sru!2sde"
+                width="605"
+                height="481"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
             <div class="contact-section__form">
               <h3 class="form__title">
                 Запишіться <span class="text-brand">безкоштовно</span> та
@@ -310,15 +314,14 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
             <div class="footer__logo">
               <a href="/">
-                
                 <img src="./images/logo.svg" alt="logo beauty zone" />
               </a>
             </div>
@@ -337,7 +340,7 @@
           </nav>
           <div class="footer__address">
             <address class="address-list" id="address">
-              <ul>
+              <ul class="footer__contact-data">
                 <li>
                   <a
                     class="footer__link"
@@ -364,41 +367,37 @@
                     Україна, м. Київ, вул. Тараса Шевченка 5
                   </a>
                 </li>
-                <div class="footer__sm-container">
-                  <li>
-                    <a href="" target="_blank">
-                      <svg class="footer__icon" width="42" height="42">
-                        <use href="./images/icons.svg#phone-icon"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" target="_blank">
-                      <svg class="footer__icon" width="42" height="42">
-                        <use href="./images/icons.svg#facebook-icon"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" target="_blank">
-                      <svg class="footer__icon" width="42" height="42">
-                        <use href="./images/icons.svg#inst-icon"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </div>
               </ul>
+              <div class="footer__sm-container">
+                <a href="" target="_blank">
+                  <svg class="footer__icon" width="42" height="42">
+                    <use href="./images/icons.svg#phone-icon"></use>
+                  </svg>
+                </a>
+
+                <a href="" target="_blank">
+                  <svg class="footer__icon" width="42" height="42">
+                    <use href="./images/icons.svg#facebook-icon"></use>
+                  </svg>
+                </a>
+
+                <a href="" target="_blank">
+                  <svg class="footer__icon" width="42" height="42">
+                    <use href="./images/icons.svg#inst-icon"></use>
+                  </svg>
+                </a>
+              </div>
             </address>
-            <div class="footer__address-copyright">
-              <a class="footer__link" href="" target="_blank"
-                >Політика конфіденційності
-              </a>
-              <p class="footer__copyright">&copy; 2022 Дані захищені</p>
-            </div>
+          </div>
+          <div class="footer__address-copyright">
+            <a class="footer__link" href="" target="_blank"
+              >Політика конфіденційності
+            </a>
+            <p class="footer__copyright">&copy; 2022 Дані захищені</p>
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden">
       <div class="modal">

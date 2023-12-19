@@ -15,7 +15,7 @@
   &__control {
     width: 100%;
 
-    padding: 18px 32px;
+    padding: 16px 24px;
     border-radius: 32px;
     border: 2px solid var(--color-secondary-dark);
     background-color: transparent;
@@ -26,6 +26,10 @@
     &:focus {
       background-color: var(--color-secondary-dark);
       outline: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        padding: 18px 32px;
+      }
     }
   }
 }
